@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+#define ll long long int
+using namespace std;
+
+int main()
+{
+  /*  #ifndef ONLINE_JUDGE
+   freopen("in.txt", "r", stdin);
+   freopen("err.txt", "w", stderr);
+   freopen("out.txt", "w", stdout);
+   #endif
+	*/
+
+	int n=1000;
+
+	//cout<<(n/3)+(n/5)-(n/15);
+	int c=0;
+	for(int i=1;i<n;i++)
+        if(i%3==0 || i%5==0)c+=i;
+
+    cout<<c;
+	return 0;
+
+}
